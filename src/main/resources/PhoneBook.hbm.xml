@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="ua.phbook.dir.entities.PhoneBook" table="phone_book" schema="phonebase">
+        <id name="id" column="id"/>
+        <property name="idUser" column="id_user"/>
+        <property name="suname" column="suname"/>
+        <property name="fistName" column="fist_name"/>
+        <property name="middleName" column="middle_name"/>
+        <property name="phoneMobile" column="phone_mobile"/>
+        <property name="phoneHome" column="phone_home"/>
+        <property name="address" column="address"/>
+        <property name="eMail" column="e_mail"/>
+    </class>
+</hibernate-mapping>
